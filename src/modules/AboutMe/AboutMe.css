@@ -1,0 +1,14 @@
+.author {
+    margin: 0 auto;
+    padding: 20px;
+    outline: 1px solid olive;
+}
+.author__name {
+    margin-bottom: 20px;
+}
+.author__intro {
+    margin-bottom: 20px;
+}
+.author__subinfo {
+    font-weight: 600;
+}
