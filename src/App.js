@@ -1,12 +1,10 @@
-import './App.css';
-import GeneralInfo from './modules/GeneralInfo/GeneralInfo'
+import "./App.css";
+import GeneralInfo from "./modules/GeneralInfo/GeneralInfo";
 
 const App = () => (
-    <>
-        <GeneralInfo/>
-    </>
-)
-
-
+  <>
+    <GeneralInfo />
+  </>
+);
 
 export default App;
