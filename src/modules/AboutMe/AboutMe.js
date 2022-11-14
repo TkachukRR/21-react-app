@@ -1,10 +1,10 @@
 import "./AboutMe.css";
 
-const AboutMe = (props) => (
+const AboutMe = ({ name, intro, subinfo }) => (
   <div className="author">
-    <h1 className="author__name">{props.name}</h1>
-    <p className="author__intro">{props.intro}</p>
-    <span className="author__subinfo">{props.subinfo}</span>
+    <h1 className="author__name">{name}</h1>
+    <p className="author__intro">{intro}</p>
+    <span className="author__subinfo">{subinfo}</span>
   </div>
 );
 
