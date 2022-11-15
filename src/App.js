@@ -1,6 +1,22 @@
 import "./App.css";
 import GeneralInfo from "./modules/GeneralInfo/GeneralInfo";
 import AboutMe from "./modules/AboutMe/AboutMe";
+import Projects from "./modules/Projects/Projects";
+
+const finishedProjects = [
+  {
+    title: "hogwarts",
+    url: "https://tkachukrr.github.io/19-hogwarts/",
+    urlGit: "https://github.com/TkachukRR/19-hogwarts",
+    stack: ["JavaScript", "CSS", "HTML"],
+  },
+  {
+    title: "Web-studio",
+    url: "https://tkachukrr.github.io/09-web-studio/",
+    urlGit: "https://github.com/TkachukRR/09-web-studio",
+    stack: ["JavaScript", "CSS", "HTML"],
+  },
+];
 
 const App = () => (
   <>
@@ -15,6 +31,8 @@ const App = () => (
             skills."
         subinfo="I am considering work in all cities and am ready to move."
       />
+
+      <Projects projects={finishedProjects} />
     </GeneralInfo>
   </>
 );
