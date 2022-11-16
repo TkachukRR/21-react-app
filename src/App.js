@@ -2,6 +2,12 @@ import "./App.css";
 import GeneralInfo from "./modules/GeneralInfo/GeneralInfo";
 import AboutMe from "./modules/AboutMe/AboutMe";
 import Projects from "./modules/Projects/Projects";
+import Education from "./modules/Education/Education";
+
+const personInfo = {
+  name: "Roman",
+  lastName: "Tkachuk",
+};
 
 const finishedProjects = [
   {
@@ -18,11 +24,31 @@ const finishedProjects = [
   },
 ];
 
+const educations = [
+  {
+    institution: 'National Aerospace University М.E. Zhukovsky "KHАІ"',
+    rank: "Specialist",
+    period: {
+      start: { month: "September", year: "2004" },
+      end: { month: "June", year: "2009" },
+    },
+  },
+];
+
+const educations2 = [
+  {
+    institution: 'National Aerospace University М.E. Zhukovsky "KHАІ"',
+    rank: "Specialist",
+    start: "September 2004",
+    end: "June 2009",
+  },
+];
+
 const App = () => (
   <>
     <GeneralInfo>
       <AboutMe
-        name="Roman Tkachuk"
+        name={personInfo.name + " " + personInfo.lastName}
         intro="Looking for Junior Frontend developer position. I am highly motivated to
             get new knowledge and put it to use in real projects. I am good team
             player and prefer to build strong communication via members of a group.
@@ -33,6 +59,7 @@ const App = () => (
       />
 
       <Projects projects={finishedProjects} />
+      <Education projects={educations2} />
     </GeneralInfo>
   </>
 );

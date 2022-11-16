@@ -28,16 +28,21 @@
   display: block;
   cursor: pointer;
 }
-.project__stack {
-}
 .stack__list {
   display: inline-block;
   list-style-type: none;
+}
+
+.stack__list::before{
+  content: "[ ";
+}
+.stack__list::after{
+  content: " ]";
 }
 .stack__item {
   display: inline-block;
 }
 
 .stack__item:not(:last-child)::after {
-  content: ",";
+  content: ", ";
 }
