@@ -24,23 +24,14 @@ const finishedProjects = [
   },
 ];
 
-const educations = [
-  {
-    institution: 'National Aerospace University М.E. Zhukovsky "KHАІ"',
-    rank: "Specialist",
-    period: {
-      start: { month: "September", year: "2004" },
-      end: { month: "June", year: "2009" },
-    },
-  },
-];
-
 const educations2 = [
   {
     institution: 'National Aerospace University М.E. Zhukovsky "KHАІ"',
     rank: "Specialist",
-    start: "September 2004",
-    end: "June 2009",
+    period: {
+      start: { month: "September", year: '2004' },
+      end: { month: "June", year: '2009' },
+    },
   },
 ];
 
@@ -59,7 +50,7 @@ const App = () => (
       />
 
       <Projects projects={finishedProjects} />
-      <Education projects={educations2} />
+      <Education education={educations2} />
     </GeneralInfo>
   </>
 );

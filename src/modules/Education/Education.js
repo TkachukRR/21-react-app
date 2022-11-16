@@ -1,25 +1,24 @@
 import "./Education.css";
 
-const Education = ({ educations }) => (
+const Education = ({ education }) => (
   <>
     <h2>Education</h2>
 
     <ol className="education__list">
-      {educations.map(({ education }) => (
+      {education.map(({ institution, rank, period : {start, end} }) => (
         <li className="education__item">
-          {/* <h3 className="education__title">{education.institution}</h3> */}
+          <h3
+            key={institution + rank + start + end}
+            className="education__title"
+          >
+            {institution}
+          </h3>
 
-          {/* <div className="education__period"> */}
-            {/* <div className="education__start"> */}
-              {/* {period.start.month + period.start.year} */}
-            {/* </div> */}
-            {/* <span> - </span> */}
-            {/* <div className="education__end"> */}
-              {/* {period.end.month + period.end.year} */}
-            {/* </div> */}
-          {/* </div> */}
-          {/* <span> | </span> */}
-          {/* <div className="education__rank">{education.rank}</div> */}
+          <div className="education__period">
+            <div className="education__start">{start.month + ' ' + start.year}</div>
+            <div className="education__end">{end.month + ' ' + end.year}</div>
+          </div>
+          <div className="education__rank">{rank}</div>
         </li>
       ))}
     </ol>
