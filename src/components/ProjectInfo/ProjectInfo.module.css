@@ -1,15 +1,3 @@
-.project__list {
-  padding: 20px;
-  padding-left: calc(20px + 1em);
-  outline: 1px solid lightcoral;
-}
-
-.project__item {
-    outline: 1px solid goldenrod;
-}
-.project__item:not(:last-child) {
-  margin-bottom: 10px;
-}
 .project__title {
   text-transform: capitalize;
 }
@@ -24,7 +12,7 @@
   display: block;
   cursor: pointer;
 }
-.project__url-git {
+.project__url_git {
   display: block;
   cursor: pointer;
 }
@@ -33,10 +21,10 @@
   list-style-type: none;
 }
 
-.stack__list::before{
+.stack__list::before {
   content: "[ ";
 }
-.stack__list::after{
+.stack__list::after {
   content: " ]";
 }
 .stack__item {

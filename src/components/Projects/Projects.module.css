@@ -1,0 +1,15 @@
+.projects {
+  padding: 10px;
+}
+.header {
+  margin-bottom: 10px;
+}
+.list {
+  padding-left: 1em;
+}
+
+.list__item {
+}
+.list__item:not(:last-child) {
+  margin-bottom: 10px;
+}
