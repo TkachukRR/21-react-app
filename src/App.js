@@ -1,9 +1,9 @@
-import css from "./App.css";
 import FullUserInfo from "./FullUserInfo.json"
 import { GeneralInfo } from "./components/GeneralInfo/GeneralInfo";
 import { AboutMe } from "./components/AboutMe/AboutMe";
 import { Projects } from "./components/Projects/Projects";
 import { EducationalInstitutions } from "./components/EducationalInstitutions/EducationalInstitutions";
+import css from "./App.css";
 
 export const App = () => (
   <>

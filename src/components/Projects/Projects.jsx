@@ -1,5 +1,4 @@
-import PropTypes from "prop-types";
-import { array } from "prop-types";
+import PropTypes, { arrayOf } from "prop-types";
 import { ProjectInfo } from "../ProjectInfo/ProjectInfo";
 import css from "./Projects.module.css";
 
@@ -25,7 +24,7 @@ Projects.propTypes = {
       title: PropTypes.string.isRequired,
       url: PropTypes.string.isRequired,
       urlGit: PropTypes.string.isRequired,
-      stack: array,
+      stack: arrayOf(PropTypes.string)
     })
   ),
 };
