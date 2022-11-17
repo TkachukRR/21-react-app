@@ -1,0 +1,35 @@
+.position{
+    margin-bottom: 10px;
+}
+.company{
+    color: var(--color-text-second);
+    margin-left: .5em;
+}
+.period{
+    display: inline-block;
+    margin-right: .25em;
+    margin-bottom: 10px;
+}
+.period__start{
+    
+}
+.period__end{
+    
+}
+.period__end::before{
+    content: '- ';
+}
+.location{
+    display: inline-block;
+}
+
+.location::before{
+    content: '| ';
+}
+.responsibilities__list{
+    margin-left: 1em;
+    margin-bottom: 10px;
+}
+.responsibilities__item{
+
+}

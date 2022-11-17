@@ -27,7 +27,7 @@ export const EducationalInstitutions = ({ titleText, education }) => (
 EducationalInstitutions.propTypes = {
   titleText: PropTypes.string,
   education: PropTypes.arrayOf(
-    PropTypes.shape({
+    PropTypes.exact({
       institution: PropTypes.string.isRequired,
       rank: PropTypes.string,
       period: PropTypes.object,

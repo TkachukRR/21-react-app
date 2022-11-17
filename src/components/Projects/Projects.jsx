@@ -24,7 +24,7 @@ Projects.propTypes = {
       title: PropTypes.string.isRequired,
       url: PropTypes.string.isRequired,
       urlGit: PropTypes.string.isRequired,
-      stack: arrayOf(PropTypes.string)
+      stack: PropTypes.arrayOf(PropTypes.string)
     })
   ),
 };

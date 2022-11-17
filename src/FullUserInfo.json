@@ -4,7 +4,7 @@
     "intro": "Looking for Junior Frontend developer position. I am highly motivated to get new knowledge and put it to use in real projects. I am good team player and prefer to build strong communication via members of a group. Also, I am well-organized and responsible. I am constantly engaged in self-development in programming and improvement of English language skills.",
     "subinfo": "I am considering work in all cities and am ready to move.",
 
-    "finishedProjects": [
+    "projects": [
         {
           "title": "hogwarts",
           "url": "https://tkachukrr.github.io/19-hogwarts/",
@@ -46,5 +46,49 @@
             "end": "2009-06-31T00:00:00"
           }
         }
+      ],
+
+      "companies": [
+        {
+          "company": "GoIT",
+          "position": "Trainee Developer",
+          "location": "Kharkiv - Warsaw",
+          "period": {
+            "start": "2021-11-01T00:00:00",
+            "end": "now"
+          },
+          "responsibilities" : [
+            "HTML, CSS", "JavaScript", "SASS, BEM", "React", "GitHub", "Figma", "Responsive/adaptive web design"
+          ]
+        },
+        {
+          "company": "Smart Garden",
+          "position": "CEO",
+          "location": "Kharkiv",
+          "period": {
+            "start": "2009-08-01T00:00:00",
+            "end": "2021-11-01T00:00:00"
+          },
+          "responsibilities" : [
+            "Installation of automatic irrigation systems, repair and maintenance of systems", 
+            "Creation of a plan of the site, creation of construction drawings", 
+            "Creating a 3-d model of the site, development of projects in CAD KOMPAS 3D", 
+            "Meetings and negotiations with customers, purchase of equipment, delivery of objects"
+          ]
+        },
+        {
+          "company": "LLC “Еcodis”",
+          "position": "Engineer",
+          "location": "Kharkiv",
+          "period": {
+            "start": "2006-08-01T00:00:00",
+            "end": "2009-09-01T00:00:00"
+          },
+          "responsibilities" : [
+            "Installation of automatic irrigation systems, repair and maintenance of systems", 
+            "Creation of a plan of the site, creation of construction drawings"
+          ]
+        }
       ]
+
 }
