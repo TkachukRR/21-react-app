@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 import css from "./AboutMe.module.css";
 
-export const AboutMe = ({ name, intro, subinfo }) => (
+export const AboutMe = ({ name, lastName, intro, subinfo }) => (
   <div className={css.author}>
-    <h1 className={css.author__name}>{name}</h1>
+    <h1 className={css.author__name}>{name} {lastName}</h1>
     <p className={css.author__intro}>{intro}</p>
     <span className={css.author__subinfo}>{subinfo}</span>
   </div>
