@@ -1,11 +1,13 @@
 @import-normalize;
 
 :root {
-    --color-text-first: #212121;
-    --color-text-second: #ff9100;
+  --color-text-first: #212121;
+  --color-text-second: #ff9100;
 }
 
 body {
+  font-family: sans-serif;
+  line-height: 1.5;
 }
 
 *,

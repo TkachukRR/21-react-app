@@ -1,12 +1,14 @@
 import PropTypes from "prop-types";
-import css from "./AboutMe.module.css";
+import { Author, FullName, Intro, SubInfo } from "./AboutMe.styled";
 
 export const AboutMe = ({ name, lastName, intro, subinfo }) => (
-  <div className={css.author}>
-    <h1 className={css.author__name}>{name} {lastName}</h1>
-    <p className={css.author__intro}>{intro}</p>
-    <span className={css.author__subinfo}>{subinfo}</span>
-  </div>
+  <Author>
+    <FullName>
+      {name} {lastName}
+    </FullName>
+    <Intro>{intro}</Intro>
+    <SubInfo>{subinfo}</SubInfo>
+  </Author>
 );
 
 AboutMe.propTypes = {

@@ -1,4 +1,14 @@
 import { formatDate } from "../../utils";
+import {
+  Position,
+  CompanyName,
+  Period,
+  Start,
+  End,
+  Location,
+  Resposibilities,
+  Resposibility,
+} from "./Company.styled";
 import css from "./Company.module.css";
 
 export const Company = ({
@@ -14,24 +24,22 @@ export const Company = ({
 
   return (
     <>
-      <h4 className={css.position}>
+      <Position>
         {position}
-        <span className={css.company}>{company}</span>
-      </h4>
+        <CompanyName>{company}</CompanyName>
+      </Position>
 
-      <div className={css.period}>
-        <span className={css.period__start}>{formatatedStart}</span>
-        <span className={css.period__end}>{formatatedEnd}</span>
-      </div>
-      <div className={css.location}>{location}</div>
+      <Period>
+        <Start>{formatatedStart}</Start>
+        <End>{formatatedEnd}</End>
+      </Period>
+      <Location>{location}</Location>
 
-      <ul className={css.responsibilities__list}>
+      <Resposibilities>
         {responsibilities.map((responsibility) => (
-          <li key={responsibility} className={css.responsibilities__item}>
-            {responsibility}
-          </li>
+          <Resposibility key={responsibility}>{responsibility}</Resposibility>
         ))}
-      </ul>
+      </Resposibilities>
     </>
   );
 };

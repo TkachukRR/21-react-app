@@ -1,151 +1,157 @@
 {
-    "name": "Roman",
-    "lastName": "Tkachuk",
-    "dateOfBirh": "1987-08-27T00:00:00",
-    "location": "Warsaw, before the war - Kharkiv",
-    "intro": "Looking for Junior Frontend developer position. I am highly motivated to get new knowledge and put it to use in real projects. I am good team player and prefer to build strong communication via members of a group. Also, I am well-organized and responsible. I am constantly engaged in self-development in programming and improvement of English language skills.",
-    "subinfo": "I am considering work in all cities and am ready to move.",
+  "name": "Roman",
+  "lastName": "Tkachuk",
+  "dateOfBirh": "1987-08-27T00:00:00",
+  "location": "Warsaw, before the war - Kharkiv",
+  "intro": "Looking for Junior Frontend developer position. I am highly motivated to get new knowledge and put it to use in real projects. I am good team player and prefer to build strong communication via members of a group. Also, I am well-organized and responsible. I am constantly engaged in self-development in programming and improvement of English language skills.",
+  "subinfo": "I am considering work in all cities and am ready to move.",
 
-    "contacts": {
-      "tel": ["+380979501906", "+48662276720"],
-      "email": "tkachukrr@gmail.com",
-      "telegram": "https://t.me/TkachukRR",
-      "linkedIn": "https://www.linkedin.com/in/roman-tkachuk-2a4337234",
-      "gitHub": "https://github.com/TkachukRR"
+  "contacts": {
+    "tel": ["+380979501906", "+48662276720"],
+    "email": "tkachukrr@gmail.com",
+    "telegram": "https://t.me/TkachukRR",
+    "linkedIn": "https://www.linkedin.com/in/roman-tkachuk-2a4337234",
+    "gitHub": "https://github.com/TkachukRR"
+  },
+
+  "skills": {
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "SASS",
+      "BEM",
+      "Figma",
+      "GitHub",
+      "Adobe Photoshop",
+      "Responsive/adaptive web design",
+      "CAD KOMPAS 3D",
+      "Realtime landscaping Architect"
+    ],
+    "languages": [
+      {
+        "language": "Ukrainian",
+        "skill": "expert"
+      },
+      {
+        "language": "English",
+        "skill": "intermediate"
+      },
+      {
+        "language": "Polish",
+        "skill": "beginner"
+      },
+      {
+        "language": "Russian",
+        "skill": "expert"
+      }
+    ],
+    "soft": [
+      "Efficient communicator, good at collaboration",
+      "Time-management",
+      "Creativity",
+      "Problem solving",
+      "Stress tolerance"
+    ]
+  },
+
+  "hobbies": [
+    "Guitar",
+    "Volleyball",
+    "Automation system",
+    "Walks and traveling"
+  ],
+
+  "projects": [
+    {
+      "title": "hogwarts",
+      "url": "https://tkachukrr.github.io/19-hogwarts/",
+      "urlGit": "https://github.com/TkachukRR/19-hogwarts",
+      "stack": ["JavaScript", "CSS", "HTML"]
     },
+    {
+      "title": "Web-studio",
+      "url": "https://tkachukrr.github.io/09-web-studio/",
+      "urlGit": "https://github.com/TkachukRR/09-web-studio",
+      "stack": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "GooDreamShop",
+      "url": "https://tkachukrr.github.io/14-GooDreamShop/",
+      "urlGit": "https://github.com/TkachukRR/14-GooDreamShop/",
+      "stack": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "Christmas trees",
+      "url": "https://tkachukrr.github.io/06-christmas-trees/",
+      "urlGit": "https://github.com/TkachukRR/06-christmas-trees/",
+      "stack": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "Resume",
+      "url": "https://tkachukrr.github.io/00-Resume/",
+      "urlGit": "https://github.com/TkachukRR/00-Resume/",
+      "stack": ["React", "JavaScript", "CSS", "HTML"]
+    }
+  ],
 
-    "skills":{
-      "tech": [
-        "HTML",
-        "CSS",
+  "education": [
+    {
+      "institution": "National Aerospace University М.E. Zhukovsky 'KHАІ'",
+      "rank": "Specialist",
+      "period": {
+        "start": "2004-09-01T00:00:00",
+        "end": "2009-06-31T00:00:00"
+      }
+    }
+  ],
+
+  "companies": [
+    {
+      "company": "GoIT",
+      "position": "Trainee Developer",
+      "location": "Kharkiv - Warsaw",
+      "period": {
+        "start": "2021-11-01T00:00:00",
+        "end": "now"
+      },
+      "responsibilities": [
+        "HTML, CSS",
         "JavaScript",
-        "SASS",
-        "BEM",
-        "Figma",
+        "SASS, BEM",
+        "React",
         "GitHub",
-        "Adobe Photoshop",
-        "Responsive/adaptive web design",
-        "CAD KOMPAS 3D",
-        "Realtime landscaping Architect"
-      ],
-      "languages": [
-        {
-          "language": "Ukrainian",
-          "skill": "expert"
-        },
-        {
-          "language": "English",
-          "skill": "intermediate"
-        },
-        {
-          "language": "Polish",
-          "skill": "beginner"
-        },
-        {
-          "language": "Russian",
-          "skill": "expert"
-        }
-      ],
-      "soft":[
-        "Efficient communicator, good at collaboration",
-        "Time-management",
-        "Creativity",
-        "Problem solving",
-        "Stress tolerance"
+        "Figma",
+        "Responsive/adaptive web design"
       ]
     },
-
-    "hobbies": [
-      "Guitar",
-      "Volleyball",
-      "Automation system",
-      "Walks and traveling"
-    ],
-
-    "projects": [
-        {
-          "title": "hogwarts",
-          "url": "https://tkachukrr.github.io/19-hogwarts/",
-          "urlGit": "https://github.com/TkachukRR/19-hogwarts",
-          "stack": ["JavaScript", "CSS", "HTML"]
-        },
-        {
-          "title": "Web-studio",
-          "url": "https://tkachukrr.github.io/09-web-studio/",
-          "urlGit": "https://github.com/TkachukRR/09-web-studio",
-          "stack": ["HTML", "CSS", "JavaScript"]
-        },
-        {
-          "title": "GooDreamShop",
-          "url": "https://tkachukrr.github.io/14-GooDreamShop/",
-          "urlGit": "https://github.com/TkachukRR/14-GooDreamShop/",
-          "stack": ["HTML", "CSS", "JavaScript"]
-        },
-        {
-          "title": "Christmas trees",
-          "url": "https://tkachukrr.github.io/06-christmas-trees/",
-          "urlGit": "https://github.com/TkachukRR/06-christmas-trees/",
-          "stack": ["HTML", "CSS", "JavaScript"]
-        },
-        {
-          "title": "Resume",
-          "url": "https://tkachukrr.github.io/00-Resume/",
-          "urlGit": "https://github.com/TkachukRR/00-Resume/",
-          "stack": ["React","JavaScript", "CSS", "HTML"]
-        }
-      ],
-
-    "education": [
-        {
-          "institution": "National Aerospace University М.E. Zhukovsky 'KHАІ'",
-          "rank": "Specialist",
-          "period": {
-            "start": "2004-09-01T00:00:00",
-            "end": "2009-06-31T00:00:00"
-          }
-        }
-      ],
-
-    "companies": [
-      {
-        "company": "GoIT",
-        "position": "Trainee Developer",
-        "location": "Kharkiv - Warsaw",
-        "period": {
-          "start": "2021-11-01T00:00:00",
-          "end": "now"
-        },
-        "responsibilities" : [
-          "HTML, CSS", "JavaScript", "SASS, BEM", "React", "GitHub", "Figma", "Responsive/adaptive web design"
-        ]
+    {
+      "company": "Smart Garden",
+      "position": "CEO",
+      "location": "Kharkiv",
+      "period": {
+        "start": "2009-08-01T00:00:00",
+        "end": "2021-11-01T00:00:00"
       },
-      {
-        "company": "Smart Garden",
-        "position": "CEO",
-        "location": "Kharkiv",
-        "period": {
-          "start": "2009-08-01T00:00:00",
-          "end": "2021-11-01T00:00:00"
-        },
-        "responsibilities" : [
-          "Installation of automatic irrigation systems, repair and maintenance of systems", 
-          "Creation of a plan of the site, creation of construction drawings", 
-          "Creating a 3-d model of the site, development of projects in CAD KOMPAS 3D", 
-          "Meetings and negotiations with customers, purchase of equipment, delivery of objects"
-        ]
+      "responsibilities": [
+        "Installation of automatic irrigation systems, repair and maintenance of systems",
+        "Creation of a plan of the site, creation of construction drawings",
+        "Creating a 3-d model of the site, development of projects in CAD KOMPAS 3D",
+        "Meetings and negotiations with customers, purchase of equipment, delivery of objects"
+      ]
+    },
+    {
+      "company": "LLC “Еcodis”",
+      "position": "Engineer",
+      "location": "Kharkiv",
+      "period": {
+        "start": "2006-08-01T00:00:00",
+        "end": "2009-09-01T00:00:00"
       },
-      {
-        "company": "LLC “Еcodis”",
-        "position": "Engineer",
-        "location": "Kharkiv",
-        "period": {
-          "start": "2006-08-01T00:00:00",
-          "end": "2009-09-01T00:00:00"
-        },
-        "responsibilities" : [
-          "Installation of automatic irrigation systems, repair and maintenance of systems", 
-          "Creation of a plan of the site, creation of construction drawings"
-        ]
-      }
-    ]
+      "responsibilities": [
+        "Installation of automatic irrigation systems, repair and maintenance of systems",
+        "Creation of a plan of the site, creation of construction drawings"
+      ]
+    }
+  ]
 }
