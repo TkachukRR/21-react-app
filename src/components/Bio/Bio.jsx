@@ -1,4 +1,6 @@
 import PropTypes from "prop-types";
+import { formatBirthDate } from "../../utils";
+import { GeneralInfo, Photo, BirthDate, Location, Accent } from "./Bio.styled";
 
 export const Bio = ({
   name,
@@ -8,18 +10,22 @@ export const Bio = ({
   dateOfBirth,
   location,
 }) => {
-  const altImg = `Photo ${name} ${lastName}`;
+  const formatedBirthDate = formatBirthDate(dateOfBirth);
 
   return (
-    <>
-      <img src={imgLink} alt={altImg} width={imgWidth + "px"} />
-      <div>
-        Date of birth:<span>{dateOfBirth}</span>
-      </div>
-      <div>
-        Location:<span>{location}</span>
-      </div>
-    </>
+    <GeneralInfo>
+      <Photo
+        src={imgLink}
+        alt={`Photo ${name} ${lastName}`}
+        width={imgWidth + "px"}
+      />
+      <BirthDate>
+        Date of birth:<Accent>{formatedBirthDate}</Accent>
+      </BirthDate>
+      <Location>
+        Location:<Accent>{location}</Accent>
+      </Location>
+    </GeneralInfo>
   );
 };
 

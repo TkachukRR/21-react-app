@@ -1,31 +1,39 @@
 import { DiGithub, DiChrome } from "react-icons/di";
-import {iconSize} from "../../constants"
-import css from "./ProjectInfo.module.css";
+import { iconSize } from "../../constants";
+import {
+  AboutProject,
+  Name,
+  Info,
+  Links,
+  Link,
+  UsedTechnologies,
+  Technology,
+} from "./ProjectInfo.styled";
 
 export const ProjectInfo = ({ title, url, urlGit, stack }) => {
   return (
-    <>
-      <h3 className={css.project__title}>{title}</h3>
-      <div className={css.project__info}>
-        <div className={css.project__links}>
-          <a href={url} className={css.project__url}>
-            <DiChrome className="" size={iconSize.m} />
+    <AboutProject>
+      <Name>{title}</Name>
+      <Info>
+        <Links>
+          <Link href={url}>
+            <DiChrome size={iconSize.m} />
             {url}
-          </a>
-          <a href={urlGit} className={css.project__url_git}>
-            <DiGithub className="" size={iconSize.m} />
+          </Link>
+          <Link href={urlGit}>
+            <DiGithub size={iconSize.m} />
             {urlGit}
-          </a>
-        </div>
+          </Link>
+        </Links>
 
-        <ul className={css.stack__list}>
+        <UsedTechnologies>
+          [
           {stack.map((technology) => (
-            <li key={technology} className={css.stack__item}>
-              {technology}
-            </li>
+            <Technology key={technology}>{technology}</Technology>
           ))}
-        </ul>
-      </div>
-    </>
+          ]
+        </UsedTechnologies>
+      </Info>
+    </AboutProject>
   );
 };

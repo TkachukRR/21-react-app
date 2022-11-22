@@ -1,27 +1,27 @@
 import PropTypes from "prop-types";
 import { Institution } from "../Institution/Institution";
-import css from "./EducationalInstitutions.module.css";
+import {
+  Education,
+  Title,
+  GraduateList,
+} from "./EducationalInstitutions.styled";
 
 export const EducationalInstitutions = ({ titleText, education }) => (
-  <section className={css.education}>
-    <h3 className={css.education__header}>{titleText}</h3>
+  <Education>
+    <Title>{titleText}</Title>
 
-    <ol className={css.education__list}>
+    <GraduateList>
       {education.map(({ institution, rank, period }) => (
-        <li
+        <Institution
           key={institution + rank + period.start + period.end}
-          className={css.education__item}
-        >
-          <Institution
-            institution={institution}
-            start={period.start}
-            end={period.end}
-            rank={rank}
-          />
-        </li>
+          institution={institution}
+          start={period.start}
+          end={period.end}
+          rank={rank}
+        />
       ))}
-    </ol>
-  </section>
+    </GraduateList>
+  </Education>
 );
 
 EducationalInstitutions.propTypes = {
@@ -32,5 +32,5 @@ EducationalInstitutions.propTypes = {
       rank: PropTypes.string,
       period: PropTypes.object,
     })
-  )
+  ),
 };

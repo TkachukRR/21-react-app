@@ -1,6 +1,8 @@
 import styled from "@emotion/styled";
 
-export const Position = styled.h4`
+export const WorkInformation = styled.li``;
+
+export const Position = styled.h3`
   margin-bottom: 10px;
 `;
 export const CompanyName = styled.span`

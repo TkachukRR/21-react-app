@@ -1,7 +1,5 @@
-import css from "./GeneralInfo.module.css";
+import { Information } from "./GeneralInfo.styled";
 
-export const GeneralInfo = ({children}) => (
-    <div className={css.general__information}>
-        {children}
-    </div>
+export const GeneralInfo = ({ children }) => (
+  <Information>{children}</Information>
 );

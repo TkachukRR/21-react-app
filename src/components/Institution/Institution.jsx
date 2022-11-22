@@ -1,19 +1,26 @@
+import {
+  University,
+  Name,
+  Period,
+  Start,
+  End,
+  Rank,
+} from "./Institution.styled";
 import { formatDate } from "../../utils";
-import css from "./Institution.module.css";
 
 export const Institution = ({ institution, start, end, rank }) => {
   const formatatedStart = formatDate(start);
   const formatatedEnd = formatDate(end);
 
   return (
-    <>
-      <h4 className={css.institution__title}>{institution}</h4>
+    <University>
+      <Name>{institution}</Name>
 
-      <div className={css.institution__period}>
-        <div className={css.institution__start}>{formatatedStart}</div>
-        <div className={css.institution__end}>{formatatedEnd}</div>
-      </div>
-      <div className={css.institution__rank}>{rank}</div>
-    </>
+      <Period>
+        <Start>{formatatedStart}</Start> | <End>{formatatedEnd}</End>
+      </Period>
+
+      <Rank>{rank}</Rank>
+    </University>
   );
 };

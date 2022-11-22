@@ -1,21 +1,24 @@
 import PropTypes, { arrayOf } from "prop-types";
 import { ProjectInfo } from "../ProjectInfo/ProjectInfo";
-import css from "./Projects.module.css";
+import { AllProjects, Title, ProjectsList } from "./Projects.styled";
 
 export const Projects = ({ titleText, projects }) => (
-  <section className={css.projects}>
-    <h3 className={css.header}>{titleText}</h3>
+  <AllProjects>
+    <Title>{titleText}</Title>
 
-    <ol className={css.list}>
+    <ProjectsList>
       {projects.map(({ title, url, urlGit, stack }) => (
-        <li key={url} className={css.list__item}>
-          <ProjectInfo title={title} url={url} urlGit={urlGit} stack={stack} />
-        </li>
+        <ProjectInfo
+          key={url}
+          title={title}
+          url={url}
+          urlGit={urlGit}
+          stack={stack}
+        />
       ))}
-    </ol>
-  </section>
+    </ProjectsList>
+  </AllProjects>
 );
-
 
 Projects.propTypes = {
   titleText: PropTypes.string,
@@ -24,7 +27,7 @@ Projects.propTypes = {
       title: PropTypes.string.isRequired,
       url: PropTypes.string.isRequired,
       urlGit: PropTypes.string.isRequired,
-      stack: PropTypes.arrayOf(PropTypes.string)
+      stack: PropTypes.arrayOf(PropTypes.string),
     })
   ),
 };

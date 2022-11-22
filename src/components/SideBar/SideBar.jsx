@@ -1,7 +1,5 @@
-import css from "./SideBar.module.css";
+import { SideSection } from "./SideBar.styled";
 
-export const SideBar = ({children}) => {
-    return (
-        <div>{children}</div>
-    )
-}
+export const SideBar = ({ children }) => {
+  return <SideSection>{children}</SideSection>;
+};

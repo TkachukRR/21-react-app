@@ -1,28 +1,31 @@
 import PropTypes from "prop-types";
-import css from "./WorkExperience.module.css";
 import { Company } from "../Company/Company";
+import {
+  WorkExpirience,
+  SectionTitle,
+  CompanyList,
+} from "./WorkExperience.styled";
 
 export const WorkExperience = ({ titleText, companies }) => {
   return (
-    <section className={css.projects}>
-      <h3 className={css.header}>{titleText}</h3>
-      <ol className={css.list}>
+    <WorkExpirience>
+      <SectionTitle>{titleText}</SectionTitle>
+      <CompanyList>
         {companies.map(
           ({ company, position, location, period, responsibilities }) => (
-            <li key={company} className={css.list__item}>
-              <Company
-                company={company}
-                position={position}
-                location={location}
-                start={period.start}
-                end={period.end}
-                responsibilities={responsibilities}
-              />
-            </li>
+            <Company
+              key={company}
+              company={company}
+              position={position}
+              location={location}
+              start={period.start}
+              end={period.end}
+              responsibilities={responsibilities}
+            />
           )
         )}
-      </ol>
-    </section>
+      </CompanyList>
+    </WorkExpirience>
   );
 };
 

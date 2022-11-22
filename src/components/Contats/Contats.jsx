@@ -1,32 +1,42 @@
-import { AiOutlinePhone, AiOutlineMail, AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
+import {
+  AiOutlinePhone,
+  AiOutlineMail,
+  AiOutlineLinkedin,
+  AiOutlineGithub,
+} from "react-icons/ai";
 import { TbBrandTelegram } from "react-icons/tb";
+import { Title, PhoneNumbers, Link } from "./Contats.styled";
 import { iconSize } from "../../constants";
-import css from "./Contats.module.css";
 
 export const Contats = ({ contacts }) => {
   const { tel, email, telegram, linkedIn, gitHub } = contacts;
   return (
     <>
-      <div>
-        <AiOutlinePhone />
-        {tel}
-      </div>
-      <div>
+      <Title>Contacts:</Title>
+      <PhoneNumbers>
+        {tel.map((number) => (
+          <Link key={number} href={"tel:" + number}>
+            <AiOutlinePhone />
+            {number}
+          </Link>
+        ))}
+      </PhoneNumbers>
+      <Link href={"mailto:" + email}>
         <AiOutlineMail />
         {email}
-      </div>
-      <div>
+      </Link>
+      <Link href={telegram}>
         <TbBrandTelegram />
         {telegram}
-      </div>
-      <div>
+      </Link>
+      <Link href={linkedIn}>
         <AiOutlineLinkedin />
         {linkedIn}
-      </div>
-      <div>
+      </Link>
+      <Link href={gitHub}>
         <AiOutlineGithub />
         {gitHub}
-      </div>
+      </Link>
     </>
   );
 };

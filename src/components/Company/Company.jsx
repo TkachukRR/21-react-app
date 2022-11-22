@@ -8,8 +8,8 @@ import {
   Location,
   Resposibilities,
   Resposibility,
+  WorkInformation,
 } from "./Company.styled";
-import css from "./Company.module.css";
 
 export const Company = ({
   company,
@@ -23,16 +23,15 @@ export const Company = ({
   const formatatedEnd = "now" || formatDate(end);
 
   return (
-    <>
+    <WorkInformation>
       <Position>
-        {position}
-        <CompanyName>{company}</CompanyName>
+        {position} | <CompanyName>{company}</CompanyName>
       </Position>
 
       <Period>
-        <Start>{formatatedStart}</Start>
-        <End>{formatatedEnd}</End>
+        <Start>{formatatedStart}</Start> | <End>{formatatedEnd}</End>
       </Period>
+
       <Location>{location}</Location>
 
       <Resposibilities>
@@ -40,6 +39,6 @@ export const Company = ({
           <Resposibility key={responsibility}>{responsibility}</Resposibility>
         ))}
       </Resposibilities>
-    </>
+    </WorkInformation>
   );
 };
