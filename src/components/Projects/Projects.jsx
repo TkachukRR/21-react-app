@@ -1,10 +1,11 @@
-import PropTypes, { arrayOf } from "prop-types";
+import PropTypes from "prop-types";
+import { Children } from "react";
 import { ProjectInfo } from "../ProjectInfo/ProjectInfo";
 import { AllProjects, Title, ProjectsList } from "./Projects.styled";
 
-export const Projects = ({ titleText, projects }) => (
+export const Projects = ({ children, projects }) => (
   <AllProjects>
-    <Title>{titleText}</Title>
+    <Title>{children}</Title>
 
     <ProjectsList>
       {projects.map(({ title, url, urlGit, stack }) => (

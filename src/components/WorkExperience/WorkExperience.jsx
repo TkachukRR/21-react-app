@@ -6,10 +6,10 @@ import {
   CompanyList,
 } from "./WorkExperience.styled";
 
-export const WorkExperience = ({ titleText, companies }) => {
+export const WorkExperience = ({ children, companies }) => {
   return (
     <WorkExpirience>
-      <SectionTitle>{titleText}</SectionTitle>
+      <SectionTitle>{children}</SectionTitle>
       <CompanyList>
         {companies.map(
           ({ company, position, location, period, responsibilities }) => (

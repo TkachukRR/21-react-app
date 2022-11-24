@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const AboutProject = styled.li`
   :not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: ${(props) => props.theme.space[2]}px;
   }
 `;
 
@@ -22,7 +22,7 @@ export const Links = styled.div``;
 export const Link = styled.a`
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 0.25em;
   cursor: pointer;
   color: inherit;
 `;

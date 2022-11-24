@@ -6,9 +6,9 @@ import {
   GraduateList,
 } from "./EducationalInstitutions.styled";
 
-export const EducationalInstitutions = ({ titleText, education }) => (
+export const EducationalInstitutions = ({ children, education }) => (
   <Education>
-    <Title>{titleText}</Title>
+    <Title>{children}</Title>
 
     <GraduateList>
       {education.map(({ institution, rank, period }) => (

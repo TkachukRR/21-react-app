@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 export const WorkInformation = styled.li``;
 
 export const Position = styled.h3`
-  margin-bottom: 10px;
+  margin-bottom: ${(props) => props.theme.space[2]}px;
 `;
 export const CompanyName = styled.span`
   color: var(--color-text-second);
@@ -12,7 +12,7 @@ export const CompanyName = styled.span`
 export const Period = styled.p`
   display: inline-block;
   margin-right: 0.25em;
-  margin-bottom: 10px;
+  margin-bottom: ${(props) => props.theme.space[3]}px;
 `;
 export const Start = styled.span``;
 export const End = styled.span``;

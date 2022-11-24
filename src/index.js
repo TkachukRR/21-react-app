@@ -4,20 +4,7 @@ import "./index.css";
 import { ThemeProvider } from "@emotion/react";
 import { App } from "./components/App/App";
 import reportWebVitals from "./reportWebVitals";
-
-const theme = {
-  colors: {
-    textMain: "#595959",
-    textSecondary: "#ffffff",
-    textTitle: "#000000",
-    textSub: "#8e949c",
-    textAccent: "#fb6d3a",
-    textSubAccent: "#a8a8a8",
-    bgMain: "#F5F7FA",
-    bgSecondary: "#1E2939",
-    accent: "#fb6d3a",
-  },
-};
+import { theme } from "./theme";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

@@ -13,19 +13,17 @@ export const Bio = ({
   const formatedBirthDate = formatBirthDate(dateOfBirth);
 
   return (
-    <GeneralInfo>
-      <Photo
-        src={imgLink}
-        alt={`Photo ${name} ${lastName}`}
-        width={imgWidth + "px"}
-      />
-      <BirthDate>
-        Date of birth:<Accent>{formatedBirthDate}</Accent>
-      </BirthDate>
-      <Location>
-        Location:<Accent>{location}</Accent>
-      </Location>
-    </GeneralInfo>
+    <>
+      <Photo src={imgLink} alt={`Photo ${name} ${lastName}`} />
+      <GeneralInfo>
+        <BirthDate>
+          Date of birth:<Accent>{formatedBirthDate}</Accent>
+        </BirthDate>
+        <Location>
+          Location:<Accent>{location}</Accent>
+        </Location>
+      </GeneralInfo>
+    </>
   );
 };
 

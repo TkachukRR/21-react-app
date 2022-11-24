@@ -1,11 +1,9 @@
 import styled from "@emotion/styled";
 
-export const WorkExpirience = styled.section`
-  padding: 10px;
-`;
+export const WorkExpirience = styled.section``;
 
 export const SectionTitle = styled.h2`
-  margin-bottom: 10px;
+  margin-bottom: ${(props) => props.theme.space[2]}px;
 `;
 
 export const CompanyList = styled.ol`
