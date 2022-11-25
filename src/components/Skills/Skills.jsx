@@ -4,7 +4,6 @@ import { Title, List, Skill } from "./Skills.styled";
 export const Skills = ({ kind, children }) => {
   return (
     <>
-      {console.log(kind)}
       <Title>{children}</Title>
       <List>
         {kind.map((skill) => (
