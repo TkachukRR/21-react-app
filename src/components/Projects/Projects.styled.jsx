@@ -1,11 +1,7 @@
 import styled from "@emotion/styled";
 
-export const AllProjects = styled.section`
-  margin-bottom: ${(props) => props.theme.space[3]}px;
-`;
-
 export const Title = styled.h2`
-  margin-bottom: ${(props) => props.theme.space[3]}px;
+  margin-bottom: ${(props) => props.theme.space[1]}px;
   color: ${(props) => props.theme.colors.textTitle};
 `;
 

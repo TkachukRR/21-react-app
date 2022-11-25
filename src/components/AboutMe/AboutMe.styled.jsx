@@ -1,8 +1,5 @@
 import styled from "@emotion/styled";
 
-export const Author = styled.section`
-  margin-bottom: ${(props) => props.theme.space[3]}px;
-`;
 export const FullName = styled.h1`
   margin-bottom: ${(props) => props.theme.space[3]}px;
   color: ${(props) => props.theme.colors.textTitle};

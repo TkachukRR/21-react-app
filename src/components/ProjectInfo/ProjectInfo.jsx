@@ -3,19 +3,23 @@ import { iconSize } from "../../constants";
 import {
   AboutProject,
   Name,
-  Info,
-  Links,
   Link,
   UsedTechnologies,
   Technology,
 } from "./ProjectInfo.styled";
+import { Box } from "../Box/Box";
 
 export const ProjectInfo = ({ title, url, urlGit, stack }) => {
   return (
     <AboutProject>
       <Name>{title}</Name>
-      <Info>
-        <Links>
+      <Box
+        display="flex"
+        justifyContent="space-between"
+        alignItems="center"
+        as="div"
+      >
+        <Box>
           <Link href={url}>
             <DiChrome size={iconSize.m} />
             {url}
@@ -24,7 +28,7 @@ export const ProjectInfo = ({ title, url, urlGit, stack }) => {
             <DiGithub size={iconSize.m} />
             {urlGit}
           </Link>
-        </Links>
+        </Box>
 
         <UsedTechnologies>
           [
@@ -33,7 +37,7 @@ export const ProjectInfo = ({ title, url, urlGit, stack }) => {
           ))}
           ]
         </UsedTechnologies>
-      </Info>
+      </Box>
     </AboutProject>
   );
 };

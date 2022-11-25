@@ -2,22 +2,15 @@ import styled from "@emotion/styled";
 
 export const AboutProject = styled.li`
   :not(:last-child) {
-    margin-bottom: ${(props) => props.theme.space[2]}px;
+    margin-bottom: ${(props) => props.theme.space[1]}px;
   }
 `;
 
 export const Name = styled.h3`
   text-transform: capitalize;
+  margin-bottom: ${(props) => props.theme.space[1]}px;
   color: ${(props) => props.theme.colors.accent};
 `;
-
-export const Info = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
-
-export const Links = styled.div``;
 
 export const Link = styled.a`
   display: flex;

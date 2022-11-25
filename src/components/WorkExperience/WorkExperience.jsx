@@ -1,14 +1,11 @@
 import PropTypes from "prop-types";
 import { Company } from "../Company/Company";
-import {
-  WorkExpirience,
-  SectionTitle,
-  CompanyList,
-} from "./WorkExperience.styled";
+import { SectionTitle, CompanyList } from "./WorkExperience.styled";
+import { Box } from "../Box/Box";
 
 export const WorkExperience = ({ children, companies }) => {
   return (
-    <WorkExpirience>
+    <Box my={2} px={4} as="section">
       <SectionTitle>{children}</SectionTitle>
       <CompanyList>
         {companies.map(
@@ -25,13 +22,11 @@ export const WorkExperience = ({ children, companies }) => {
           )
         )}
       </CompanyList>
-    </WorkExpirience>
+    </Box>
   );
 };
 
 WorkExperience.propTypes = {
-  titleText: PropTypes.string,
-
   companies: PropTypes.arrayOf(
     PropTypes.exact({
       company: PropTypes.string.isRequired,

@@ -25,14 +25,13 @@ export const App = () => {
   } = FullUserInfo;
 
   return (
-    // <Container>
     <Box
       display="flex"
       flexDirection="row-reverse"
       maxWidth="1024px"
       m="0 auto"
     >
-      <Box as="main" bg="bgMain" p="10px">
+      <Box as="main" bg="bgMain">
         <AboutMe
           name={name}
           lastName={lastName}
@@ -48,7 +47,7 @@ export const App = () => {
       </Box>
 
       <Box as="aside" bg="bgSecondary" color="textSecondary">
-        <Box as="section">
+        <Box as="section" mb={2}>
           <Bio
             name={name}
             lastName={lastName}
@@ -58,25 +57,21 @@ export const App = () => {
           />
         </Box>
 
-        <Box as="section">
+        <Box px={3} my={2}>
           <Contats contacts={contacts} />
-        </Box>
 
-        <Box as="section">
           <Skills kind={tech}>Tech Skills:</Skills>
-        </Box>
 
-        <Box as="section">
-          <Skills kind={languages.map((e) => Object.values(e))}>
+          <Skills
+            kind={languages
+              .map((e) => Object.values(e))
+              .map((e) => e.join(" - "))}
+          >
             Language Skills:
           </Skills>
-        </Box>
 
-        <Box as="section">
           <Skills kind={soft}>Soft Skills:</Skills>
-        </Box>
 
-        <Box as="section">
           <Skills kind={hobbies}>Hobbies:</Skills>
         </Box>
       </Box>

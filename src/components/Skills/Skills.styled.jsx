@@ -1,11 +1,11 @@
 import styled from "@emotion/styled";
 
 export const Title = styled.h3`
-  margin: 16px 0;
+  margin: ${(p) => p.theme.space[2]}px 0;
 `;
 
 export const List = styled.ul`
-  margin-bottom: 8px;
+  margin: ${(p) => p.theme.space[2]}px 0;
 `;
 
 export const Skill = styled.li`

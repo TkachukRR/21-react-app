@@ -1,15 +1,16 @@
 import PropTypes from "prop-types";
-import { Author, FullName, Intro, SubInfo } from "./AboutMe.styled";
+import { FullName, Intro, SubInfo } from "./AboutMe.styled";
+import { Box } from "../Box/Box";
 
 export const AboutMe = ({ name, lastName, intro, subinfo }) => {
   return (
-    <Author>
+    <Box mb={2} px={4} as="header">
       <FullName>
         {name} {lastName}
       </FullName>
       <Intro>{intro}</Intro>
       <SubInfo>{subinfo}</SubInfo>
-    </Author>
+    </Box>
   );
 };
 

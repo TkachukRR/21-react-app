@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
-import { Children } from "react";
 import { ProjectInfo } from "../ProjectInfo/ProjectInfo";
-import { AllProjects, Title, ProjectsList } from "./Projects.styled";
+import { Title, ProjectsList } from "./Projects.styled";
+import { Box } from "../Box/Box";
 
 export const Projects = ({ children, projects }) => (
-  <AllProjects>
+  <Box my={2} px={4} as="section">
     <Title>{children}</Title>
 
     <ProjectsList>
@@ -18,7 +18,7 @@ export const Projects = ({ children, projects }) => (
         />
       ))}
     </ProjectsList>
-  </AllProjects>
+  </Box>
 );
 
 Projects.propTypes = {

@@ -1,13 +1,10 @@
 import PropTypes from "prop-types";
 import { Institution } from "../Institution/Institution";
-import {
-  Education,
-  Title,
-  GraduateList,
-} from "./EducationalInstitutions.styled";
+import { Title, GraduateList } from "./EducationalInstitutions.styled";
+import { Box } from "../Box/Box";
 
 export const EducationalInstitutions = ({ children, education }) => (
-  <Education>
+  <Box my={2} px={4} as="section">
     <Title>{children}</Title>
 
     <GraduateList>
@@ -21,7 +18,7 @@ export const EducationalInstitutions = ({ children, education }) => (
         />
       ))}
     </GraduateList>
-  </Education>
+  </Box>
 );
 
 EducationalInstitutions.propTypes = {

@@ -1,28 +1,22 @@
 import PropTypes from "prop-types";
 import { formatBirthDate } from "../../utils";
-import { GeneralInfo, Photo, BirthDate, Location, Accent } from "./Bio.styled";
+import { Photo, BirthDate, Location, Accent } from "./Bio.styled";
+import { Box } from "../Box/Box";
 
-export const Bio = ({
-  name,
-  lastName,
-  imgLink,
-  imgWidth,
-  dateOfBirth,
-  location,
-}) => {
+export const Bio = ({ name, lastName, imgLink, dateOfBirth, location }) => {
   const formatedBirthDate = formatBirthDate(dateOfBirth);
 
   return (
     <>
       <Photo src={imgLink} alt={`Photo ${name} ${lastName}`} />
-      <GeneralInfo>
+      <Box px={3} my={2}>
         <BirthDate>
-          Date of birth:<Accent>{formatedBirthDate}</Accent>
+          Date of birth: <Box color="textSub">{formatedBirthDate}</Box>
         </BirthDate>
         <Location>
-          Location:<Accent>{location}</Accent>
+          Location: <Box color="textSub">{location}</Box>
         </Location>
-      </GeneralInfo>
+      </Box>
     </>
   );
 };
@@ -31,7 +25,6 @@ Bio.propTypes = {
   name: PropTypes.string.isRequired,
   lastName: PropTypes.string.isRequired,
   imgLink: PropTypes.string.isRequired,
-  imgWidth: PropTypes.string.isRequired,
   dateOfBirth: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
 };

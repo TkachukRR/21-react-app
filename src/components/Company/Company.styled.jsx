@@ -1,12 +1,10 @@
 import styled from "@emotion/styled";
 
-export const WorkInformation = styled.li``;
-
 export const Position = styled.h3`
   margin-bottom: ${(props) => props.theme.space[2]}px;
 `;
 export const CompanyName = styled.span`
-  color: var(--color-text-second);
+  color: ${(p) => p.theme.colors.textAccent};
   margin-left: 0.5em;
 `;
 export const Period = styled.p`

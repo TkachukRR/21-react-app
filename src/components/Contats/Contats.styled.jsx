@@ -1,10 +1,9 @@
 import styled from "@emotion/styled";
 
 export const Title = styled.h3`
-  margin: 16px 0;
+  margin: ${(p) => p.theme.space[2]}px 0;
 `;
 
-export const PhoneNumbers = styled.p``;
 export const Link = styled.a`
   display: flex;
   align-items: center;
